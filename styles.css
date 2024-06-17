@@ -1,0 +1,146 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  background-color: rgb(250, 245, 241);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.button {
+  background-color: rgb(255, 255, 232);
+  color: black;
+  font-size: 16px;
+  padding: 16px;
+  border-radius: 20%;
+  text-wrap: nowrap;
+}
+.dropdowncontent {
+  display: none;
+  position: absolute;
+  background-color: #011936;
+
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdowncontent a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdowncontent a:hover {
+  background-color: rgb(233, 225, 216);
+}
+
+.dropdown:hover .dropdowncontent {
+  display: block;
+}
+
+.dropdown:hover .button {
+  background-color: rgb(201, 211, 207);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #011936;
+}
+#icon {
+  color: azure;
+  font-size: 200%;
+  margin: auto 0;
+}
+h1 {
+  font-size: 200%;
+  color: black;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+img {
+  height: 30rem;
+  width: 57rem;
+  margin: 0 auto;
+}
+h2 {
+  font-size: 180%;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.brands {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+  background-color: white;
+}
+
+.video-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+video {
+  height: 30rem;
+  width: 60rem;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+p {
+  color: black;
+  font-size: 150%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 0 2%;
+}
+
+@media only screen and (max-width: 400px) {
+  img {
+    height: 80%;
+    width: 100%;
+  }
+
+  .brands {
+    width: 80%;
+  }
+  video {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  img {
+    height: 65%;
+    width: 65%;
+  }
+
+  h1 {
+    font-size: 130%;
+  }
+
+  h2 {
+    font-size: 120%;
+  }
+
+  p {
+    font-size: 100%;
+  }
+
+  .brands {
+    width: 90%;
+  }
+  video {
+    width: 65%;
+    height: 65%;
+  }
+}
